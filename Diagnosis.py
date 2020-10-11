@@ -4,8 +4,8 @@ import Zika
 import Chikungunya
 
 def medExam():
-    febre_temp =        int(User.data["febre_temperatura"])
-    febre_dur  =        int(User.data["febre_duracao"])
+    febre_temp =        int(User.data["temperatura"])
+    febre_dur  =        int(User.data["dias_febre"])
     manchas =           int(User.data["manchas_pele"])
     dor_musc =          int(User.data["dor_muscular"])
     dor_art_freq =      int(User.data["dor_articular_frequencia"])
@@ -13,7 +13,7 @@ def medExam():
     edema_art_freq =    int(User.data["edema_articular_frequencia"])
     edema_art_int =     int(User.data["edema_articular_intensidade"])
     conjunt =           int(User.data["conjuntivite"])
-    enxaqueca =         int(User.data["enxaqueca"])
+    enxaqueca =         int(User.data["dor_cabeca"])
     coceira =           int(User.data["coceira"])
     hipertro =          int(User.data["hipertrofia_ganglionar"])
     discrasia =         int(User.data["discrasia_hemorragica"])
