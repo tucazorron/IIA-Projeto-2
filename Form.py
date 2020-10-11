@@ -1,12 +1,12 @@
-import user
+import User
 
-print("====\n")
+print("\n====\n")
 print("Formulario:\n")
 print("Quando for perguntado sobre 'frequência' e 'intensidade', ponha entre 1 e 3 sendo 1 pouco intenso/pouca frequência e 3 muito intenso/frequência. Caso não possua o sintoma, ponha 0\n")
 print("Quando for perguntado se há ou não algum sintoma, ponha 1 para sim e 0 para não\n")
 
-user.User["febre_temperatura"] =            input("1. Qual a sua temperatura corporal?\n")
-user.User["febre_duracao"] =                input("2. Qual a duracao da sua febre?\n")
+User.data["febre_temperatura"] = int(input("1. Qual a sua temperatura corporal em graus Celsius?\n"))
+User.data["febre_duracao"] = int(input("2. Ha quantos dias esta com febre?\n"))
 #user.User["manchas_pele"] =                 input("3. Há presença de manchas na pele?\n")
 #user.User["dor_muscular"] =                 input("4. Qual a intensidade da sua dor muscular?\n")
 #user.User["dor_articular_frequencia"] =     input("5. Houve dor articular?\n")
