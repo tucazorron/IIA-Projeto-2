@@ -1,5 +1,5 @@
 data = {
-    "febre_temperatura": [38, 100],
+    "febre_temperatura": [38, 42],
     "febre_duracao": [4, 7],
     "manchas_pele": [0, 1],
     "dor_muscular": [3],
@@ -7,7 +7,7 @@ data = {
     "dor_articular_intensidade": [1],
     "edema_articular_frequencia": [0, 1],
     "edema_articular_intensidade": [1, 2, 3],
-    "conjuntivite": [10],
+    "conjuntivite": [1], 
     "enxaqueca": 3,
     "coceira": [1],
     "hipertrofia_ganglionar": 1,

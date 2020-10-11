@@ -1,9 +1,9 @@
 import Form
 import Diagnosis
+import Decision
 
 def main():
     Form
-    paciente = Diagnosis.medExam()
-    print(paciente)
-
+    Diagnosis
+    Decision
 main()
