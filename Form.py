@@ -1,9 +1,11 @@
 import User
 
 print("\n====")
-print("\nFormulario:")
-print("\nQuando for perguntado sobre 'frequencia' e 'intensidade', responda entre '1' e '3' sendo '1' pouco intenso/pouca frequencia e '3' muito intenso/muita frequencia. Caso nao possua o sintoma, responda '0'")
-print("\nQuando for perguntado se possui algum sintoma, responda '1' para 'Sim' e '0' para 'Não'")
+print("\nFormulario de Diagnostico:")
+
+print("\n- Perguntas de Sim/Nao:\n    - Se a resposta for 'Sim' entao responda '1'\n    - Se a resposta for 'Nao' entao responda '0'")
+print("\n- Perguntas de Frequencia:\n    - Se a resposta for 'Raramente' entao responda '1'\n    - Se a respota for 'Moderada' entao responda '2'\n    - Se a resposta for 'Frequentemente' entao responda '3'")
+print("\n- Perguntas de Intensidade:\n    - Se a resposta for 'Leve' entao responda '1'\n    - Se a respota for 'Moderada' entao responda '2'\n    - Se a resposta for 'Intensa' entao responda '3'")
 
 User.data["temperatura"] = int(input("\nP: Qual a tua temperatura corporal em graus Celsius?\nR: "))
 
@@ -12,14 +14,22 @@ if User.data["temperatura"] >= 38:
 
 User.data["manchas_pele"] = int(input("\nP: Voce possui alguma mancha de pele recente?\nR: "))
 
-User.data["dor_muscular"] = int(input("\nP: Com qual frequencia voce sente dor musucular?\nR: "))
+User.data["dor_muscular"] = int(input("\nP: Voce sente alguma dor muscular?\nR: "))
 
-User.data["dor_articular_frequencia"] = int(input("\nP: Com qual frequencia voce sente dor articular?\nR: "))
+if User.data["dor_muscular"] == 1:
+    User.data["dor_muscular"] = int(input("\nP: Qual a frequencia das suas dores musculares?\nR: "))
 
-User.data["edema_articular"] = int(input("\nP: Voce possui algum edema articular?\nR: "))
+User.data["dor_articular_frequencia"] = int(input("\nP: Voce possui alguma dor articular?\nR: "))
 
-if User.data["edema_articular"] == 1:
-    User.data["edema_articular"] == int(input("\nP: Qual a intensidade de dor do edema articular?\nR: "))
+if User.data["dor_articular_frequencia"] == 1:
+    User.data["dor_articular_frequencia"] = int(input("\nP: Qual a frequencia da suas dores articulares?\nR: "))
+    User.data["dor_articular_intensidade"] = int(input("\nP: Qual a intensidade das suas dores articulares?\nR: "))
+
+User.data["edema_articular_frequencia"] = int(input("\nP: Voce possui algum edema articular?\nR: "))
+
+if User.data["edema_articular_frequencia"] == 1:
+    User.data["edema_articular_frequencia"] = int(input("\nP: Qual a frequencia dos seus edemas articulares?\nR: "))
+    User.data["edema_articular_intensidade"] = int(input("\nP: Qual a intensidade dos seus edemas articulares?\nR: "))
 
 User.data["conjuntivite"] == int(input("\nP: Voce possui conjuntivite?\nR: "))
 
